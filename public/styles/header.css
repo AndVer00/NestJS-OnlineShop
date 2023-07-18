@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 75px;
+    gap: 50px;
+    box-shadow: 0 4px 4px rgba(199, 199, 199, 0.5);
+    background: #FFFFFF;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 1.1;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 600;
+    text-align: center;
+    color: #FD7E14;
+    white-space: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.login-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+}
+
+.login-bar__button {
+    width: 75px;
+    height: 50px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #474747;
+    border-radius: 20px;
+    border-color: #C4C3C1;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-bar__button:hover {
+    color: #FFFFFF;
+    border-color: #F7A760;
+    background-color: #F7A760;
+}
+
+.login-text {
+    font-size: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    height: 30px;
+    color:#F7A760;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    white-space: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.utility-bar {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.utility-bar__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.utility-bar__nav-item {
+    font-size: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    height: 30px;
+    color:#FD7E14;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    white-space: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.utility-bar__nav-item__selected {
+    font-size: 22px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    height: 30px;
+    color: #804613;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    white-space: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 700;
+}
+
+.utility-bar__nav-item:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        display: none;
+    }
+}

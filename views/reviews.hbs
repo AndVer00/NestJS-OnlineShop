@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Web программирование</title>
+    {{> shared_bundles }}
+    {{> shared_scripts }}
+    <link rel="stylesheet" href="styles/reviews.css">
+  </head>
+
+  <body>
+    <header class="header">
+      {{> header }}
+    </header>
+
+    <main class="main">
+      {{> reviews_form }}
+    </main>
+  </body>
+
+  <script src="scripts/reviewCreator.js"></script>
+</html>

@@ -1,0 +1,21 @@
+<div class="catalog">
+  <h2 class="catalog__title">Каталог</h2>
+  <ul class="catalog__list">
+    <li class="catalog__list-item"><a href="#" class="catalog__list-item-text">Вид товаров №1</a></li>
+    <li class="catalog__list-item"><a href="#" class="catalog__list-item-text">Вид товаров №2</a></li>
+    <li class="catalog__list-item"><a href="#" class="catalog__list-item-text">Вид товаров №3</a></li>
+  </ul>
+</div>
+
+<ul class="hot-offers__list">
+  {{#each data.list}}
+    <li class="hot-offers__list-product">
+      <div class="hot-offers__list-product-img"><img src="assets/product-img.png" alt="product-img-1"></div>
+      <ul class="hot-offers__list-product-info">
+        <li class="hot-offers__list-product-info-item"> <a href="#" class="hot-offers__list-product-title">{{ this.description }}</a> </li>
+        <li class="hot-offers__list-product-info-item">Цена: €{{ this.price }}</li>
+      </ul>
+      <button class="hot-offers__list-product-button">Купить</button>
+    </li>
+  {{/each}}
+</ul>
